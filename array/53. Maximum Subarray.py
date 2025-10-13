@@ -18,6 +18,7 @@ class Solution(object):
         for i in range(1, N):
             cur_num = nums[i]
             
+            # * правило Кадана: начать новый или тянуть старый?
             # определяем локальный максимум
             local_max = max(cur_num, local_max + cur_num)
             # глобальный максимум

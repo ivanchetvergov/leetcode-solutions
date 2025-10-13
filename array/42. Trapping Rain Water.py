@@ -19,7 +19,7 @@ class Solution(object):
                     collected_water += max_left - height[left]
                 left += 1 # двигаем
                 
-            # есть правая сторона больше двигаем ее
+            # есть правая сторона ниже двигаем ее
             else:
                 # переопределим локальный максимум
                 if (height[right] >= max_right):
